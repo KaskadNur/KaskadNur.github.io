@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <title>Заголовок страницы</title>
     <link rel="stylesheet" href="./styles/style.css">
+  
+  
   </head>
+
 
   <body>
         <style>
@@ -21,32 +25,53 @@
     <header>
         <style>
             </style>
-      <h1 align="center">ʙᴄᴇᴧᴇннᴀя ᴋин᧐</h1>
+      <h1 align="center">Вселенная кино</h1>
       <p align="center">В телеграмм канале все фильмы выходят на много раньше, так что не забудь подписаться ⤵️</p>  
         <style>
    .btn {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to bottom, #33ccff 20%, #6900C6 80%); /* Серый цвет фона */
+    display: inline-block; /* Строчно-блочный элемент */
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); /* Серый цвет фона */
     color: #fff; /* Белый цвет текста */
     padding: 1rem 5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
     border-radius: 15px; /* Скругляем уголки */
    }
+  .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
   </style>
  </head>
  <body align="center">  
-  <a href="https://t.me/vselenkino" class="btn">Telegram</a>
+  <a href="https://t.me/vselenkino" class="btn"><span>Telegram</span></a>
  </body>
        <p align="center">Так же есть Тик Ток аккаунт⤵️</p>  
  </head>
  <body> 
-  <a href="https://tiktok.com/@nurislamgaliev" class="btn">Tik Tok</a>
+  <a href="https://tiktok.com/@nurislamgaliev" class="btn"><span>Tik Tok</span></a>
  </body>
        <p align="center">Хочешь себе такой же мини сайт? Пиши в личку⤵️</p>  
  </head>
  <body> 
-  <a href="https://vk.com/galiev_n" class="btn">Написать</a>
+  <a href="https://vk.com/galiev_n" class="btn"><span>Написать</span></a>
  </body>
         </ul>
       </nav>        
